@@ -1,0 +1,242 @@
+[
+  {
+    "DateTime": "2024-09-18 18:59:13",
+    "Direction": "Left to Right",
+    "Left to Right": 1,
+    "ObjectDetectedID": "1726898417",
+    "ObjectSize": {
+      "Height": 6,
+      "Width": 7
+    },
+    "Position": {
+      "X": 433,
+      "Y": 188
+    },
+    "ProgramUnitID": "TestCounterNordicScreen"
+  },
+  {
+    "DateTime": "2024-09-18 18:59:23",
+    "Direction": "Right to Left",
+    "ObjectDetectedID": "1726898426",
+    "ObjectSize": {
+      "Height": 11,
+      "Width": 28
+    },
+    "Position": {
+      "X": 451,
+      "Y": 243
+    },
+    "ProgramUnitID": "TestCounterNordicScreen",
+    "Right to Left": 1
+  },
+  {
+    "DateTime": "2024-09-18 18:59:23",
+    "Direction": "Right to Left",
+    "ObjectDetectedID": "1726898427",
+    "ObjectSize": {
+      "Height": 3,
+      "Width": 3
+    },
+    "Position": {
+      "X": 435,
+      "Y": 247
+    },
+    "ProgramUnitID": "TestCounterNordicScreen",
+    "Right to Left": 2
+  },
+  {
+    "DateTime": "2024-09-18 18:59:24",
+    "Direction": "Left to Right",
+    "Left to Right": 2,
+    "ObjectDetectedID": "1726898427",
+    "ObjectSize": {
+      "Height": 3,
+      "Width": 4
+    },
+    "Position": {
+      "X": 413,
+      "Y": 253
+    },
+    "ProgramUnitID": "TestCounterNordicScreen"
+  },
+  {
+    "DateTime": "2024-09-18 18:59:24",
+    "Direction": "Left to Right",
+    "Left to Right": 3,
+    "ObjectDetectedID": "1726898427",
+    "ObjectSize": {
+      "Height": 3,
+      "Width": 4
+    },
+    "Position": {
+      "X": 389,
+      "Y": 258
+    },
+    "ProgramUnitID": "TestCounterNordicScreen"
+  },
+  {
+    "DateTime": "2024-09-18 18:59:24",
+    "Direction": "Right to Left",
+    "ObjectDetectedID": "1726898427",
+    "ObjectSize": {
+      "Height": 4,
+      "Width": 5
+    },
+    "Position": {
+      "X": 435,
+      "Y": 245
+    },
+    "ProgramUnitID": "TestCounterNordicScreen",
+    "Right to Left": 3
+  },
+  {
+    "DateTime": "2024-09-18 18:59:25",
+    "Direction": "Left to Right",
+    "Left to Right": 4,
+    "ObjectDetectedID": "1726898429",
+    "ObjectSize": {
+      "Height": 6,
+      "Width": 4
+    },
+    "Position": {
+      "X": 433,
+      "Y": 275
+    },
+    "ProgramUnitID": "TestCounterNordicScreen"
+  },
+  {
+    "DateTime": "2024-09-18 18:59:40",
+    "Direction": "Left to Right",
+    "Left to Right": 5,
+    "ObjectDetectedID": "1726898442",
+    "ObjectSize": {
+      "Height": 16,
+      "Width": 51
+    },
+    "Position": {
+      "X": 430,
+      "Y": 285
+    },
+    "ProgramUnitID": "TestCounterNordicScreen"
+  },
+  {
+    "DateTime": "2024-09-18 18:59:57",
+    "Direction": "Right to Left",
+    "ObjectDetectedID": "1726898457",
+    "ObjectSize": {
+      "Height": 5,
+      "Width": 6
+    },
+    "Position": {
+      "X": 437,
+      "Y": 239
+    },
+    "ProgramUnitID": "TestCounterNordicScreen",
+    "Right to Left": 4
+  },
+  {
+    "DateTime": "2024-09-18 19:00:00",
+    "Direction": "Left to Right",
+    "Left to Right": 6,
+    "ObjectDetectedID": "1726898459",
+    "ObjectSize": {
+      "Height": 16,
+      "Width": 52
+    },
+    "Position": {
+      "X": 432,
+      "Y": 281
+    },
+    "ProgramUnitID": "TestCounterNordicScreen"
+  },
+  {
+    "DateTime": "2024-09-18 19:00:04",
+    "Direction": "Right to Left",
+    "ObjectDetectedID": "1726898464",
+    "ObjectSize": {
+      "Height": 27,
+      "Width": 81
+    },
+    "Position": {
+      "X": 435,
+      "Y": 255
+    },
+    "ProgramUnitID": "TestCounterNordicScreen",
+    "Right to Left": 5
+  },
+  {
+    "DateTime": "2024-09-18 19:00:09",
+    "Direction": "Left to Right",
+    "Left to Right": 7,
+    "ObjectDetectedID": "1726898469",
+    "ObjectSize": {
+      "Height": 3,
+      "Width": 3
+    },
+    "Position": {
+      "X": 392,
+      "Y": 267
+    },
+    "ProgramUnitID": "TestCounterNordicScreen"
+  },
+  {
+    "DateTime": "2024-09-18 19:00:09",
+    "Direction": "Right to Left",
+    "ObjectDetectedID": "1726898469",
+    "ObjectSize": {
+      "Height": 3,
+      "Width": 3
+    },
+    "Position": {
+      "X": 436,
+      "Y": 247
+    },
+    "ProgramUnitID": "TestCounterNordicScreen",
+    "Right to Left": 6
+  },
+  {
+    "DateTime": "2024-09-18 19:00:11",
+    "Direction": "Left to Right",
+    "Left to Right": 8,
+    "ObjectDetectedID": "1726898470",
+    "ObjectSize": {
+      "Height": 4,
+      "Width": 4
+    },
+    "Position": {
+      "X": 393,
+      "Y": 256
+    },
+    "ProgramUnitID": "TestCounterNordicScreen"
+  },
+  {
+    "DateTime": "2024-09-18 19:00:11",
+    "Direction": "Right to Left",
+    "ObjectDetectedID": "1726898470",
+    "ObjectSize": {
+      "Height": 5,
+      "Width": 6
+    },
+    "Position": {
+      "X": 434,
+      "Y": 239
+    },
+    "ProgramUnitID": "TestCounterNordicScreen",
+    "Right to Left": 7
+  },
+  {
+    "DateTime": "2024-09-18 19:00:39",
+    "Direction": "Right to Left",
+    "ObjectDetectedID": "1726898496",
+    "ObjectSize": {
+      "Height": 3,
+      "Width": 5
+    },
+    "Position": {
+      "X": 434,
+      "Y": 195
+    },
+    "ProgramUnitID": "TestCounterNordicScreen",
+    "Right to Left": 8
+  }
+]

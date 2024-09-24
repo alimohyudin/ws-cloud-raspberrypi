@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  server:
+    build: .
+    container_name: websocket-server
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+      - "3003:3003"
+    volumes:
+      - .:/usr/src/app
+    environment:
+      - NODE_ENV=production

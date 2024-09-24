@@ -1,0 +1,6 @@
+# Ignore node_modules folder
+client/node_modules
+server/node_modules
+
+# Ignore .vscode folder
+server/.vscode
