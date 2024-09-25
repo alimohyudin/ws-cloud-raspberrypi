@@ -12,9 +12,10 @@ const heartbeatTime = 30000;
 
 function connectWebSocket() {
     ws = new WebSocket(`ws://${process.env.VPS_HOST}:${process.env.VPS_PORT}`);
-
+    
+    console.log(new Date() + ' - Connect to VPS WebSocket server on ' + process.env.VPS_HOST + ':' + process.env.VPS_PORT);
     ws.on('open', () => {
-        console.log('Connected to VPS WebSocket server');
+        console.log(new Date() + ' - Connected to VPS WebSocket server');
         
         heartbeatInterval = setInterval(() => {
             if (ws.readyState === WebSocket.OPEN) {
@@ -27,7 +28,7 @@ function connectWebSocket() {
 
     ws.on('message', (message) => {
         const messageStr = message.toString();
-        console.log('Received from server:', messageStr);
+        console.log(new Date() + ' - Received from server:', messageStr);
 
         if (messageStr === 'REQUEST_DATA') {
             filterAndSendData();
@@ -35,13 +36,13 @@ function connectWebSocket() {
     });
 
     ws.on('close', () => {
-        console.log('Disconnected from VPS WebSocket server. Attempting to reconnect...');
+        console.log( new Date() + ' - Disconnected from VPS WebSocket server. Attempting to reconnect...');
         clearInterval(heartbeatInterval);
         setTimeout(connectWebSocket, reconnectInterval);
     });
 
     ws.on('error', (error) => {
-        console.error('WebSocket error:', error);
+        console.error(new Date() + ' - WebSocket error:', error);
         ws.close();
         setTimeout(connectWebSocket, reconnectInterval);
     });
