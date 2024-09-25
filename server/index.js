@@ -17,20 +17,38 @@ wss.on('connection', (ws) => {
     console.log('LiDAR device connected via WebSocket');
 
     activePiConnection = ws;
+    ws.isAlive = true; // Track if the client is alive
+
 
     ws.on('message', (message) => {
-        console.log('Received data from Pi:', message);
+        console.log('Received data from Pi:', JSON.parse(message));
+        const data = JSON.parse(message);
 
-        wss.clients.forEach(client => {
-            if (client.readyState === WebSocket.OPEN && client !== ws) {
-                client.send(message);
-            }
-        });
+        if (data.type === 'ping') {
+            ws.isAlive = true; // Reset the flag if ping is received
+            return;
+        }
+
+        console.log('Received data:', data);
     });
+
+    const interval = setInterval(() => {
+        wss.clients.forEach(client => {
+            if (client.isAlive === false) {
+                console.log('LIDAR device disconnected.');
+                return client.terminate();
+            }
+
+            client.isAlive = false;
+            client.ping();
+        });
+    }, 30000);
 
     ws.on('close', () => {
         console.log('LiDAR device disconnected');
         activePiConnection = null;
+        clearInterval(interval); // Clear the interval on disconnect
+
     });
 });
 
