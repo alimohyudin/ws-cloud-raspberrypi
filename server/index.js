@@ -26,6 +26,8 @@ wss.on('connection', (ws) => {
 
         if (data.type === 'ping') {
             ws.isAlive = true; // Reset the flag if ping is received
+
+            ws.send('pong');
             return;
         }
 
@@ -57,7 +59,7 @@ app.get('/api/data', (req, res) => {
         activePiConnection.send('REQUEST_DATA');
 
         activePiConnection.once('message', (data) => {
-            console.log('Received data from P');
+            console.log('Received data from Pi for file');
             res.json({ success: true, data: JSON.parse(data) });
         });
     } else {
